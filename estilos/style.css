@@ -147,3 +147,44 @@ article#video .video-container {
    height: 100%;
    border-radius: 8px;
 }
+
+#skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+#skill-container .informacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skill-container .nome {
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#skill-container .percent {
+    font-weight: bold;
+    color: var(--destaque);
+}
+
+#skill-container .barra {
+    width: 100%;
+    background-color: var(--fundo-principal);
+    height: 8px;
+    border-radius: 4px;
+}
+
+#skill-container .progresso {
+    height: 100%;
+    background-color: var(--destaque-inverso);
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+   #skill-conta Comuniner {
+        grid-template-columns: 1fr 1fr;
+   } 
+}
